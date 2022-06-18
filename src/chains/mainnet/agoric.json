@@ -1,7 +1,7 @@
 {
     "chain_name": "Nova",
-    "api": ["http://localhost:1317"],
-    "rpc": ["http://localhost:26657"],
+    "api": ["http://novachain:1317"],
+    "rpc": ["http://novachain:26657"],
     "snapshot_provider": "",
     "sdk_version": "0.41.3",
     "min_tx_fee": "0",
