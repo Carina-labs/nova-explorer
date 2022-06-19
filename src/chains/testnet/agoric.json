@@ -1,10 +1,10 @@
 {
   "chain_name": "Nova (Testnet)",
   "api": [
-    "http://novachain:1317"
+    "http://localhost:1317"
   ],
   "rpc": [
-    "http://novachain:26657"
+    "http://localhost:26657"
   ],
   "snapshot_provider": "",
   "sdk_version": "0.41.3",
