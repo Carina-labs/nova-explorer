@@ -1,5 +1,5 @@
 import store from '@/store'
-import { isTestnet } from '../../libs/utils'
+import { pickChain } from '@/libs/utils'
 
 const modules = [
   {
@@ -69,16 +69,17 @@ function processMenu() {
     chainMenus.push(menu)
   })
   chainMenus.push({ header: 'LINKS' })
-  if (isTestnet()) {
+  const target = pickChain()
+  if (target === 'nova') {
     chainMenus.push({
-      title: 'Mainnet Explorer',
-      href: 'https://ping.pub',
+      title: 'Nova Explorer',
+      href: 'http://127.0.0.1',
       icon: 'ChromeIcon',
     })
-  } else {
+  } else if (target === 'gaia') {
     chainMenus.push({
       title: 'Testnet Explorer',
-      href: 'http://testnet.ping.pub',
+      href: 'http://127.0.0.1',
       icon: 'LifeBuoyIcon',
     })
   }

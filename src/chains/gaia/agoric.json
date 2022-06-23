@@ -1,0 +1,23 @@
+{
+  "chain_name": "Gaia",
+  "api": [
+    "http://localhost:1318"
+  ],
+  "rpc": [
+    "http://localhost:26658"
+  ],
+  "snapshot_provider": "",
+  "sdk_version": "0.45.4",
+  "min_tx_fee": "0",
+  "assets": [
+    {
+      "base": "uatom",
+      "symbol": "ATOM",
+      "exponent": "6",
+      "coingecko_id": "",
+      "logo": ""
+    }
+  ],
+  "addr_prefix": "cosmos",
+  "logo": "/logos/cre.png"
+}

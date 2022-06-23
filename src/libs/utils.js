@@ -410,6 +410,10 @@ export function isTestnet() {
     || window.location.search.indexOf('testnet') > -1)
 }
 
+export function pickChain() {
+  return process.env.CHAIN
+}
+
 export function formatToken(token, IBCDenom = {}, decimals = 2, withDenom = true) {
   if (token) {
     const denom = IBCDenom[token.denom] || token.denom
