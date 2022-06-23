@@ -70,15 +70,15 @@ function processMenu() {
   })
   chainMenus.push({ header: 'LINKS' })
   const target = pickChain()
-  if (target === 'nova') {
+  if (target === 'testnet') {
     chainMenus.push({
-      title: 'Nova Explorer',
+      title: 'Testnet Explorer',
       href: 'http://127.0.0.1',
       icon: 'ChromeIcon',
     })
   } else if (target === 'gaia') {
     chainMenus.push({
-      title: 'Testnet Explorer',
+      title: 'Mainnet Explorer',
       href: 'http://127.0.0.1',
       icon: 'LifeBuoyIcon',
     })

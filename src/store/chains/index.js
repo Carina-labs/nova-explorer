@@ -14,10 +14,10 @@ let chains = {}
 const targetChain = pickChain()
 
 let configs
-if (targetChain === 'nova') {
-  configs = require.context('../../chains/nova', false, /\.json$/)
-} else if (targetChain === 'gaia') {
-  configs = require.context('../../chains/gaia', false, /\.json$/)
+if (targetChain === 'testnet') {
+  configs = require.context('../../chains/testnet', false, /\.json$/)
+} else {
+  configs = require.context('../../chains/mainnet', false, /\.json$/)
 }
 // else {
 //   configs = require.context('../../chains/nova', false, /\.json$/)
