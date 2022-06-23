@@ -7,8 +7,7 @@
 TODO: ngnix 포트 맵핑 케이스별 다르게 해주기 
 # Setup
 ```sh
-CHAIN=nova # or gaia
-docker run -e CHAIN=nova 
+VUE_APP_CHAIN=nova # or gaia
 ```
 
 # Installation:

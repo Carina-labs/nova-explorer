@@ -411,7 +411,7 @@ export function isTestnet() {
 }
 
 export function pickChain() {
-  return process.env.CHAIN
+  return process.env.VUE_APP_CHAIN
 }
 
 export function formatToken(token, IBCDenom = {}, decimals = 2, withDenom = true) {

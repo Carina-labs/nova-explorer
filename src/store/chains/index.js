@@ -12,12 +12,16 @@ import { toHex } from '@cosmjs/encoding'
 let chains = {}
 
 const targetChain = pickChain()
+
 let configs
 if (targetChain === 'nova') {
   configs = require.context('../../chains/nova', false, /\.json$/)
 } else if (targetChain === 'gaia') {
   configs = require.context('../../chains/gaia', false, /\.json$/)
 }
+// else {
+//   configs = require.context('../../chains/nova', false, /\.json$/)
+// }
 
 const update = {}
 configs.keys().forEach(k => {
